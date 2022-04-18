@@ -2,11 +2,14 @@ package com.lizgunther.videouniverse.security;
 
 import com.lizgunther.videouniverse.wishlists.Wishlist;
 import com.sun.istack.NotNull;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -34,7 +37,7 @@ public class User {
                     name = "role_id", referencedColumnName = "id"))
     private Collection<Role> roles;
 
-    @OneToMany(targetEntity = Wishlist.class, fetch = FetchType.EAGER, cascade = {CascadeType.ALL})
+    @OneToMany(targetEntity = Wishlist.class, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<Wishlist> wishlists = new HashSet<>();
 
     public User() {
@@ -109,6 +112,19 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return id == user.id && Objects.equals(firstName, user.firstName) && Objects.equals(lastName, user.lastName) && Objects.equals(email, user.email) && Objects.equals(password, user.password) && Objects.equals(roles, user.roles) && Objects.equals(wishlists, user.wishlists);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, firstName, lastName, email, password, roles, wishlists);
     }
 
     @Override

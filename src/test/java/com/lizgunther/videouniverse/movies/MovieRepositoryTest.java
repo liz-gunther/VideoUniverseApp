@@ -18,4 +18,16 @@ class MovieRepositoryTest {
     @Test
     void getMovieById() {
     }
+
+    @Test
+    void testGetMovieByGenre() {
+    }
+
+    @Test
+    void testGetRandomMovie() {
+    }
+
+    @Test
+    void testGetMovieById() {
+    }
 }

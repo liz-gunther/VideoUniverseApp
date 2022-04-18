@@ -1,16 +1,24 @@
 /* -----------------------------*/
 /*      Video Universe App      */
 /* -----------------------------*/
-- [Daily Progress] (#Daily-Progress)
-- [User Stories] (#User-Stories)
-- [Technical Architecture] (#Technical-Architecture)
-- [Technical Challenges] (#Technical-Challenges)
-- [Lessons Learned] (#Lessons-Learned)
-- [Future Improvements] (#Future-Improvements)
-- [Wireframe Diagram] (#Wireframe-Diagram)
-- [Schema Diagram] (#Schema-Diagram)
+- [Daily Progress](#Daily-Progress)
+- [User Stories](#User-Stories)
+- [Technical Architecture](#Technical-Architecture)
+- [Technical Challenges](#Technical-Challenges)
+- [Lessons Learned](#Lessons-Learned)
+- [Future Improvements](#Future-Improvements)
+- [Wireframe Diagram](#Wireframe-Diagram)
+- [Schema Diagram](#Schema-Diagram)
 
 (#Daily-Progress)
+
+/* -----------------------------*/
+/* April 18th - about 93% done  */
+/* -----------------------------*/
+
+- I've started implementing tests. I've gotten one done successfully, and I've started on the remaining tests. I also have plans to implement a user submission form, so that the current user will be able to submit a request to the video store to carry a certain movie. I am planning on fleshing that out after I finish the tests for my existing service classes & custom queries.
+
+- I also would like to finish organizing all of the writeups I'll need for my submission, including a summary of the app and plans for future improvements. 
 
 /* -----------------------------*/
 /* April 15th - about 90% done  */

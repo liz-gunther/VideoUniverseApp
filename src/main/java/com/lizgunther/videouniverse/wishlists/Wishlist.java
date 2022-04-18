@@ -1,6 +1,8 @@
 package com.lizgunther.videouniverse.wishlists;
 
 import com.lizgunther.videouniverse.movies.Movie;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import java.util.HashSet;
@@ -14,7 +16,7 @@ public class Wishlist {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
-    @ManyToMany(cascade = {CascadeType.ALL})
+    @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(
             name = "Wishlist_Movie",
             joinColumns = {@JoinColumn(name = "wishlist_id")},

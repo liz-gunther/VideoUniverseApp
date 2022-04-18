@@ -32,7 +32,7 @@ public class MovieController {
 
         return "explore";
     }
-
+    //populate the movie template page with a random movie selected from the database by genre
     @GetMapping("/category/{genre}")
     public String explorePageHorror(@PathVariable(value = "genre") String genre, Principal principal, Model model) {
         Movie movie = movieService.getMovieByGenre(genre);
@@ -43,7 +43,7 @@ public class MovieController {
         model.addAttribute("movie", movie);
         return "movie_template";
     }
-
+    //use the same concept from the previous method, but instead of filtering by genre it pulls ANY random movie from the database
     @GetMapping("/random")
     public String explorePageRandom(Principal principal, Model model) {
         Movie movie = movieService.getRandomMovie();
@@ -54,6 +54,8 @@ public class MovieController {
         model.addAttribute("movie", movie);
         return "movie_template";
     }
+    //the next three mappings are for the movies displayed on the home page
+    //TODO: refactor so that the movieid is automatically passed in
 
     @GetMapping("/thebatman")
     public String explorePageBatman(Principal principal, Model model) {
@@ -87,13 +89,6 @@ public class MovieController {
         model.addAttribute("formObject", formObject);
         return "movie_template";
     }
-
-
-//    @PostMapping("/saveToWishlist")
-//    public String saveMovieToWishlist(@ModelAttribute("movie") @Valid Wishlist wishlist) {
-//        wishlistService.saveToWishlist(wishlist);
-//        return "wishlist";
-//    }
 
 }
 

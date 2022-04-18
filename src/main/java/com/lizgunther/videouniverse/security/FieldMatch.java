@@ -14,8 +14,11 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Retention(RUNTIME)
 @Constraint(validatedBy = FieldMatchValidator.class)
 @Documented
-public @interface FieldMatch
-{
+public @interface FieldMatch {
+
+    /* This interface was created to enhance the security of the registration process. It ensures that the first
+    password entered matches the second. */
+
     String message() default "{constraints.field-match}";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};

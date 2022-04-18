@@ -29,11 +29,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUserById(long id) {
-//        User user = userRepository.findById(id).orElse(null);
-//        if (user != null) {
-//            throw new UserNotFoundException();
-//        }
-//        return user;
+        User user = userRepository.findById(id).orElse(null);
+        if (user != null) {
+            throw new UserNotFoundException();
+        }
         return userRepository.getById(id);
     }
 

@@ -264,12 +264,18 @@ input.btn {
     align-items: center;
 }
 #login-box {
-    margin: auto;
-    margin-top: 3rem;
+
+    margin-bottom: 4rem;
     padding: 1rem;
     border-radius: 25px;
     flex-wrap: wrap;
 }
+#signup-box {
+    margin: auto;
+    padding: 1rem;
+    border-radius: 25px;
+    flex-wrap: wrap;
+ }
 
 #drama {
     background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1912b050-3675-4394-a3d1-d0b4cb43ae0a/dc3fld6-47866b41-0c53-44ce-b726-56f2a7cb4660.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzE5MTJiMDUwLTM2NzUtNDM5NC1hM2QxLWQwYjRjYjQzYWUwYVwvZGMzZmxkNi00Nzg2NmI0MS0wYzUzLTQ0Y2UtYjcyNi01NmYyYTdjYjQ2NjAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.3RSTpAS_rRch3guOA3JEvARhezY4OOgwSRdB_cYkum8");

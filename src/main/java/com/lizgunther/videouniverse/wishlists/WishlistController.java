@@ -83,16 +83,17 @@ public class WishlistController {
         wishlistService.saveToWishlist(wishlist);
         return String.format("redirect:/wishlist/%d", wishlist.getId());
     }
-    @GetMapping("/deleteMovieFromWishlist/{id}")
-    public String deleteMovieFromWishlist(@PathVariable(value = "id") long movieId) {
-        wishlistService.deleteMovieFromWishlist(movieId);
-        return "redirect:/wishlist";
+    @GetMapping("/deleteMovieFromWishlist/{movieid}/{wishlistid}")
+    public String deleteMovieFromWishlist(@PathVariable(value = "movieid") long movieId, @PathVariable(value = "wishlistid") long wishlistId) {
+        wishlistService.deleteMovieFromWishlist(wishlistId, movieService.getMovieById(movieId));
+        return "redirect:/wishlist/" + wishlistId;
     }
 
     @GetMapping("/wishlist/{id}")
     public String showWishlist(@PathVariable(value="id") long id, Model model) {
         Wishlist wishlist = wishlistService.getWishlistById(id);
         model.addAttribute("moviesList", wishlist.getMovies());
+        model.addAttribute("wishlistId", id);
         return "wishlist";
 
     }

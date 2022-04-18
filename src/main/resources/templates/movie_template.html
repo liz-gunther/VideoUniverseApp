@@ -47,13 +47,14 @@
 
         <div class="col-md-2" style="margin: 3rem">
             <img th:src="@{${movie.posterLink}}"><br>
-            <form th:object="${formObject}" th:action="@{/add_movie_to_wishlist/{movieid}(movieid = ${movie.id})}" method="post">
+            <form th:object="${formObject}" th:action="@{/add_movie_to_wishlist/{movieid}(movieid = ${movie.id})}"
+                  method="post">
 
                 <select class="form-control" id="dropDownList" name="user.wishlists" th:field="*{wishlistId}" required>
                     <option value="0">select wishlist</option>
                     <option th:each="wishlist : ${wishlists}" th:value="${wishlist.id}"
                             th:text="${wishlist.wishlistName}">
-<!--                        th:selected="(${wishlist.id} == *{wishlist.id})">-->
+                        <!--                        th:selected="(${wishlist.id} == *{wishlist.id})">-->
                     </option>
                 </select>
                 <button class="bi bi-plus-square-fill" type="submit" style="border-radius: 15px; margin:2rem"> add

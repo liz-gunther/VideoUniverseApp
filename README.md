@@ -3,10 +3,14 @@
 /* -----------------------------*/
 - [Daily Progress] (#Daily-Progress)
 - [User Stories] (#User-Stories)
+- [Technical Architecture] (#Technical-Architecture)
+- [Technical Challenges] (#Technical-Challenges)
+- [Lessons Learned] (#Lessons-Learned)
+- [Future Improvements] (#Future-Improvements)
+- [Wireframe Diagram] (#Wireframe-Diagram)
+- [Schema Diagram] (#Schema-Diagram)
 
-
-
-#Daily-Progress
+(#Daily-Progress)
 
 /* -----------------------------*/
 /* April 15th - about 90% done  */

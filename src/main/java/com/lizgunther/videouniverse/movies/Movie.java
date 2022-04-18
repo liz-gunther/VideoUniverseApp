@@ -1,6 +1,7 @@
 package com.lizgunther.videouniverse.movies;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 @Entity
 @Table(name = "moviedata")
@@ -88,5 +89,18 @@ public class Movie {
 
     public void setImdbId(String imdbId) {
         this.imdbId = imdbId;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Movie movie = (Movie) o;
+        return id == movie.id && Objects.equals(title, movie.title) && Objects.equals(year, movie.year) && Objects.equals(genre, movie.genre) && Objects.equals(trailerLink, movie.trailerLink) && Objects.equals(posterLink, movie.posterLink) && Objects.equals(description, movie.description) && Objects.equals(imdbId, movie.imdbId);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, title, year, genre, trailerLink, posterLink, description, imdbId);
     }
 }

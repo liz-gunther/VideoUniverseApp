@@ -1,5 +1,6 @@
 package com.lizgunther.videouniverse.wishlists;
 
+import com.lizgunther.videouniverse.movies.Movie;
 import com.lizgunther.videouniverse.security.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -50,8 +51,10 @@ public class WishlistServiceImpl implements WishlistService {
     }
 
     @Override
-    public void deleteMovieFromWishlist(long movieId) { this.wishlistRepository.deleteById(movieId);
-
+    public void deleteMovieFromWishlist(long id, Movie movie) {
+        Wishlist wishlist = wishlistRepository.getById(id);
+        wishlist.getMovies().remove(movie);
+        wishlistRepository.save(wishlist);
     }
 
 

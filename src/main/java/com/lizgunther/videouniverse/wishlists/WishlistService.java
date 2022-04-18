@@ -1,5 +1,7 @@
 package com.lizgunther.videouniverse.wishlists;
 
+import com.lizgunther.videouniverse.movies.Movie;
+
 import java.util.Set;
 
 
@@ -17,7 +19,7 @@ public interface WishlistService {
 
     Wishlist getWishlistByUserId(long id);
 
-    void deleteMovieFromWishlist(long movieid);
+    void deleteMovieFromWishlist(long id, Movie movie);
 
 
 }

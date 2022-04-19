@@ -1,5 +1,6 @@
 package com.lizgunther.videouniverse.security;
 
+import com.lizgunther.videouniverse.movies.Request;
 import com.lizgunther.videouniverse.wishlists.Wishlist;
 import com.sun.istack.NotNull;
 import org.hibernate.annotations.OnDelete;
@@ -40,6 +41,9 @@ public class User {
     @OneToMany(targetEntity = Wishlist.class, fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Set<Wishlist> wishlists = new HashSet<>();
 
+    @OneToMany(targetEntity = Request.class)
+    private Set<Request> requests = new HashSet<>();
+
     public User() {
     }
 
@@ -56,6 +60,14 @@ public class User {
         this.email = email;
         this.password = password;
         this.roles = roles;
+    }
+
+    public Set<Request> getRequests() {
+        return requests;
+    }
+
+    public void setRequests(Set<Request> requests) {
+        this.requests = requests;
     }
 
     public String getPassword() {

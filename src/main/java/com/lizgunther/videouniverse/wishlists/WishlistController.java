@@ -83,6 +83,7 @@ public class WishlistController {
         wishlistService.saveToWishlist(wishlist);
         return String.format("redirect:/wishlist/%d", wishlist.getId());
     }
+    
     @GetMapping("/deleteMovieFromWishlist/{movieid}/{wishlistid}")
     public String deleteMovieFromWishlist(@PathVariable(value = "movieid") long movieId, @PathVariable(value = "wishlistid") long wishlistId) {
         wishlistService.deleteMovieFromWishlist(wishlistId, movieService.getMovieById(movieId));

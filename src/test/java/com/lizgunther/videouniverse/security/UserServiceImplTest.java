@@ -31,4 +31,5 @@ class UserServiceImplTest {
         Assertions.assertThat(afterAddingMoreUsers).isEqualTo(beforeAddingMoreUsers + 1);
         Assertions.assertThat(allUsers.contains(user1));
     }
+
 }

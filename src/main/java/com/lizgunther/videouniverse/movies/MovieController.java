@@ -3,12 +3,15 @@ package com.lizgunther.videouniverse.movies;
 import com.lizgunther.videouniverse.security.User;
 import com.lizgunther.videouniverse.security.UserService;
 import com.lizgunther.videouniverse.wishlists.FormObject;
+import com.lizgunther.videouniverse.wishlists.Wishlist;
 import com.lizgunther.videouniverse.wishlists.WishlistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 import java.security.Principal;
 
@@ -18,13 +21,15 @@ public class MovieController {
     private MovieService movieService;
     private UserService userService;
     private WishlistService wishlistService;
+    private RequestService requestService;
 
 
     @Autowired
-    public MovieController(MovieService movieService, UserService userService, WishlistService wishlistService) {
+    public MovieController(MovieService movieService, UserService userService, WishlistService wishlistService, RequestService requestService) {
         this.movieService = movieService;
         this.userService = userService;
         this.wishlistService = wishlistService;
+        this.requestService = requestService;
     }
 
     @GetMapping("/explore")
@@ -90,5 +95,26 @@ public class MovieController {
         return "movie_template";
     }
 
+    @GetMapping("/request")
+    public String showRequests(Principal principal, Model model) {
+        User currentUser = userService.findByEmail(principal.getName());
+        model.addAttribute("requests",requestService.getRequestsByUserId(currentUser.getId()));
+        return "request"; }
+
+    @GetMapping("/add_request")
+    public String addRequest(Model model) {
+        Request request = new Request();
+        model.addAttribute("request", request);
+        return "add_request";
+    }
+    @PostMapping("/add_request")
+    public String saveNewRequest(@ModelAttribute("request") Request request, Principal principal) {
+        User currentUser = userService.findByEmail(principal.getName());
+        //try-catch here
+        requestService.saveRequest(request);
+        currentUser.getRequests().add(request);
+        userService.saveUser(currentUser);
+        return "redirect:/request";
+    }
 }
 

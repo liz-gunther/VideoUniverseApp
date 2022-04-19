@@ -20,12 +20,21 @@ public class Movie {
     private String description;
     @Column(name = "imdbId")
     private String imdbId;
-//    @ManyToMany(mappedBy = "movies")
-//    private Set<Wishlist> wishlists = new HashSet<>();
+//
 
     public Movie() {
     }
 
+    public Movie(long id, String title, String year, String genre, String trailerLink, String posterLink, String description, String imdbId) {
+        this.id = id;
+        this.title = title;
+        this.year = year;
+        this.genre = genre;
+        this.trailerLink = trailerLink;
+        this.posterLink = posterLink;
+        this.description = description;
+        this.imdbId = imdbId;
+    }
 
     public String getYear() {
         return year;
@@ -102,5 +111,19 @@ public class Movie {
     @Override
     public int hashCode() {
         return Objects.hash(id, title, year, genre, trailerLink, posterLink, description, imdbId);
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", year='" + year + '\'' +
+                ", genre='" + genre + '\'' +
+                ", trailerLink='" + trailerLink + '\'' +
+                ", posterLink='" + posterLink + '\'' +
+                ", description='" + description + '\'' +
+                ", imdbId='" + imdbId + '\'' +
+                '}';
     }
 }

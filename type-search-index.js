@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"jpa.services","l":"UserDetailsServiceImpl"}];updateSearchResults();

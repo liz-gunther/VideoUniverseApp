@@ -1,6 +1,5 @@
-/* -----------------------------*/
-/*      Video Universe App      */
-/* -----------------------------*/
+ #Video Universe App
+
 - [Daily Progress](#Daily-Progress)
 - [User Stories](#User-Stories)
 - [Technical Architecture](#Technical-Architecture)
@@ -10,19 +9,22 @@
 - [Wireframe Diagram](#Wireframe-Diagram)
 - [Schema Diagram](#Schema-Diagram)
 
-(#Daily-Progress)
+[Daily Progress]
 
-/* -----------------------------*/
-/* April 18th - about 93% done  */
-/* -----------------------------*/
+
+**April 19th - about 96% done**
+
+- I've added a 4th model, and done at least half of the tests I need to meet the requirements. Tonight and tomorrow I plan on finishing the testing, and everything else I'll need for the presentation.
+
+**April 18th - about 93% done**
 
 - I've started implementing tests. I've gotten one done successfully, and I've started on the remaining tests. I also have plans to implement a user submission form, so that the current user will be able to submit a request to the video store to carry a certain movie. I am planning on fleshing that out after I finish the tests for my existing service classes & custom queries.
 
 - I also would like to finish organizing all of the writeups I'll need for my submission, including a summary of the app and plans for future improvements. 
 
-/* -----------------------------*/
-/* April 15th - about 90% done  */
-/* -----------------------------*/
+
+**April 15th - about 90% done**
+
 
 - Still trying to figure out how to add movies to a particular wishlist -- I used a drop-down menu in my movie
 template page and populated it with each wishlist from the current user. I've been looking up ways to include
@@ -33,18 +35,18 @@ all the testing.
 - UPDATE: I did get the add movies working! Now all of my CRUD is working as it should and I can focus on getting
 the right testing done.
 
-/* -----------------------------*/
-/* April 14th - about 80% done  */
-/* -----------------------------*/
+
+**April 14th - about 80% done**
+
 
 - Got all my CRUD working, except for the add movie to a particular user's wishlist. I was able to update and
 delete the current user, as well as create multiple wishlists for each user. I am having an issue with
 deleting wishlists, as they are connected to multiple tables. I still haven't gotten a good start on my tests
 yet, but I plan to start in earnest tomorrow.
 
-/* -----------------------------*/
-/* April 13th - about 70% done  */
-/* -----------------------------*/
+
+**April 13th - about 70% done**
+
 
 - I finally got the login/registration working. Now I'm retrofitting my CRUD operations and mapping so that it
 accurately reflects the details of the current user. Tonight I plan on fixing the delete and add functions of
@@ -55,9 +57,9 @@ it.
 - I also plan on getting my tests finished up before the weekend is over. After that, most of the capstone requirements
 will have been fulfilled.
 
-/* -----------------------------*/
-/* April 12th - about 55% done  */
-/* -----------------------------*/
+
+**April 12th - about 55% done**
+
 
 - Yesterday I attempted to add the registration page (per the lab we did together today in class) - today I hope
 to get that ironed out so that I can move forward with restructuring my mapping so that it accurately reflects
@@ -65,9 +67,9 @@ the choices of the user who is currently on the app. I've got the registration p
 out the login page.
 
 
-/* -----------------------------*/
-/* April 11th - about 50% done  */
-/* -----------------------------*/
+
+**April 11th - about 50% done**
+
 
 - My best estimate for my project is that I'm a little more than halfway done.
 
@@ -76,11 +78,7 @@ of designing pages so that you can choose which wishlist you would like to view.
 
 - I am hoping to get sessions working so that I can display the wishlists for the current user only.
 
-
-#User-Stories
-/* -----------------------------*/
-/*         USER STORIES         */
-/* -----------------------------*/
+[User Stories]
 
 1. As a user, I want to be able to create multiple wishlists so that I can easily organize the collections of movies
     I want to watch.

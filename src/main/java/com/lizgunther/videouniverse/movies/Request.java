@@ -16,6 +16,10 @@ public class Request {
     public Request() {
     }
 
+    public Request(String requestName) {
+        this.requestName = requestName;
+    }
+
     public long getId() {
         return id;
     }

@@ -4,6 +4,7 @@ import com.lizgunther.videouniverse.security.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Set;
 
 @Service
@@ -26,5 +27,10 @@ public class RequestServiceImpl implements RequestService {
     @Override
     public Set<Request> getRequestsByUserId(long id) {
         return userService.getUserById(id).getRequests();
+    }
+
+    @Override
+    public List<Request> getAllRequests() {
+        return requestRepository.findAll();
     }
 }

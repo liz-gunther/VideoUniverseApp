@@ -15,15 +15,10 @@ class WishlistServiceImplTest {
 
     @Autowired
     private WishlistServiceImpl wishlistService;
-    private UserServiceImpl userService;
-
-//    @Test
-//    void getWishlistsByUserId() {
-//        List<Wishlist> wishlists = getWishlistsByUserId(1L);
-//        Assertions.assertThat(wishlists.contains
-//    }
 
     @Test
-    void getWishlistById() {
+    void getWishlistById_should_return_specific_wishlist_when_id_is_provided() {
+        Wishlist wishlist = wishlistService.getWishlistById(1);
+        Assertions.assertThat(wishlist.getId()).isEqualTo(1);
     }
 }

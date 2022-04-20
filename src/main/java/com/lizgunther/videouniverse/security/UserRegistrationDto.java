@@ -29,6 +29,18 @@ public class UserRegistrationDto {
     @AssertTrue
     private Boolean terms;
 
+    public UserRegistrationDto() {
+    }
+
+    public UserRegistrationDto(String firstName, String lastName, String password, String confirmPassword, String email, Boolean terms) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.password = password;
+        this.confirmPassword = confirmPassword;
+        this.email = email;
+        this.terms = terms;
+    }
+
     public String getFirstName() {
         return firstName;
     }

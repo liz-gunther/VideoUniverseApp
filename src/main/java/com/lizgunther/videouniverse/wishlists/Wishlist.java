@@ -1,8 +1,6 @@
 package com.lizgunther.videouniverse.wishlists;
 
 import com.lizgunther.videouniverse.movies.Movie;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import java.util.HashSet;

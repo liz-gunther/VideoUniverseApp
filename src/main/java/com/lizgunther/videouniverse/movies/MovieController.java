@@ -3,7 +3,6 @@ package com.lizgunther.videouniverse.movies;
 import com.lizgunther.videouniverse.security.User;
 import com.lizgunther.videouniverse.security.UserService;
 import com.lizgunther.videouniverse.wishlists.FormObject;
-import com.lizgunther.videouniverse.wishlists.Wishlist;
 import com.lizgunther.videouniverse.wishlists.WishlistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -60,7 +59,6 @@ public class MovieController {
         return "movie_template";
     }
     //the next three mappings are for the movies displayed on the home page
-    //TODO: refactor so that the movieid is automatically passed in
 
     @GetMapping("/thebatman")
     public String explorePageBatman(Principal principal, Model model) {

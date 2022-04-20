@@ -9,8 +9,7 @@
 - [Wireframe Diagram](#Wireframe-Diagram)
 - [Schema Diagram](#Schema-Diagram)
 
-[Daily Progress]
-
+## Daily Progress
 
 **April 19th - about 96% done**
 
@@ -78,7 +77,7 @@ of designing pages so that you can choose which wishlist you would like to view.
 
 - I am hoping to get sessions working so that I can display the wishlists for the current user only.
 
-[User Stories]
+## User Stories
 
 1. As a user, I want to be able to create multiple wishlists so that I can easily organize the collections of movies
     I want to watch.
@@ -109,3 +108,23 @@ of designing pages so that you can choose which wishlist you would like to view.
 
 12. As a user, I want easy access to location information about the store so that I can easily visit when I'm ready
     to rent a movie.
+
+## Technical Architecture
+
+## Technical Challenges
+
+## Lessons Learned
+
+## Future Improvements
+
+This is an app idea I've had for quite some time (from far before I ever learned how to build apps), so it's something I'd love to continuously improve as my skills grow. It's a local business that I care a lot about, so I'd be thrilled if it eventually became something that could be deployed at enterprise level.
+
+One of the biggest things that I wish I could've done is added a search function. Ideally, this app would be backed by whatever movie database the business is actually using. It seems unlikely that their database hosts the kind of information needed to populate the templates I had made (links to movie posters and trailers, for example), but I'd imagine with the assistance of an API (not unlike the one I used) it could definitely be feasible. If this app was tied to their actual database, a search function would be a welcome addition. As it stands, it is only a mock database (containing about 300 sample movies) so including a search function seems kind of pointless. 
+
+I'd also love to sharpen up the front end -- while I feel I did an adequate job of capturing the views I had imagined, there are some animations that I couldn't quite puzzle out, and there are some UI elements that need to be changed. Again, this is a project I very much look forward to revisiting. I'm very proud of the work I accomplished, but I already have big ideas for how I'd like to improve it.
+
+## Wireframe Diagram
+
+## Schema Diagram
+
+![dbschema]

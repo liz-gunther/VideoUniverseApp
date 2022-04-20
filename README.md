@@ -127,4 +127,6 @@ I'd also love to sharpen up the front end -- while I feel I did an adequate job 
 
 ## Schema Diagram
 
-![dbschema]
+![database schema][schema]
+
+[schema]: https://github.com/liz-gunther/VideoUniverseApp/blob/master/resources/dbschema.png

@@ -1,4 +1,10 @@
- #Video Universe App
+ # Video Universe App
+ 
+### It's safe to say that most of us have experienced what I call "Netflix fatigue" -- that annoyance you feel when you've been scrolling and scrolling through your streaming service(s) trying to find something to watch. 
+
+### This app was designed for my local video store (yes, they still exist!) to be a fun way of exploring movies. The app has a few main features: to randomly generate a movie suggestion based on the genre selected, and to create/maintain "wishlists" of these movies so that you can remember everything you'd like to watch. Each user can also create multiple wishlists, so that movies can be sorted by mood or genre (or however else you want). 
+
+### I've also included a "request a movie" functionality that allows the user to submit a movie that they would like the store to carry. 
 
 - [Daily Progress](#Daily-Progress)
 - [User Stories](#User-Stories)
@@ -109,6 +115,8 @@ of designing pages so that you can choose which wishlist you would like to view.
 12. As a user, I want easy access to location information about the store so that I can easily visit when I'm ready
     to rent a movie.
 
+13. As a user, I'd like to be able to request a movie so that the video store can carry it.
+
 ## Technical Architecture
 
 ![technical architecture of project][techstack]
@@ -117,7 +125,25 @@ of designing pages so that you can choose which wishlist you would like to view.
 
 ## Technical Challenges
 
+This is the very first app I've ever built. I am brand new to every technology covered in this bootcamp, so I had my fair share of technical challenges to overcome. For brevity's sake, however, I'll stick to the first few that come to mind, in no particular order:
+
+1. Utilizing Bootstrap 
+   - I had big plans for my front end, and found a tutorial that I thought would be perfect for helping me build the web pages of my dreams. It turned out to be far more advanced than I was prepared for, and ended up building a lot of custom CSS classes that (I thought) would make designing multiple pages a lot smoother. However, once I got around to learning about and using Bootstrap elements, I found that a lot of my custom classes clashed with the ones needed for Bootstrap.
+   - To fix this, I ended up renaming some of my custom classes. It took a bit of refactoring, but I made short work of that with good ol' search and find.
+2. Thymeleaf
+    - I don't think I'm alone in my struggles with Thymeleaf. There wasn't a ton of course material that covered it, so I was left to my own devices to figure out a lot of the annotations and how they worked. 
+    - I overcame this particular challenge by trial and error -- doing things wrong (a lot of times) and figuring out how each element interacted with others.
+3. Complex Entity Models
+   - One final (and memorable) challenge I encountered was puzzling out my entity models. It was difficult to know how to connect the data in a way that was efficient and easily accessible. 
+   - My solution to this was to seek help -- and LOTS of it. While reading Baeldung and StackOverflow solutions certainly helped, I found that I learned most effectively when I was able to interact with my fellow learners to hash things out. Which segues nicely to my next point...
+   
 ## Lessons Learned
+
+Building this app has been quite the intense experience for me. As I've said before, it's the first app I've ever attempted to build, and having to draw upon all of the knowledge that I've crammed into my brain over the last three months has pushed me in ways I've never experienced before. I am very proud of what I've accomplished, and I look forward to building on all of these skills that I've acquired.
+
+I think my biggest takeaway from this exercise is that you make the most progress when you learn how and when to ask for help. I was very hard on myself for the first month of the bootcamp, and I was constantly overwhelmed with the feeling that I had to learn everything about every technology all at once, or I wouldn't be able to accomplish what had to be done (namely, building this application). 
+
+Once I realized that NOBODY can learn how to program in just three months, a lot of that pressure I put on myself started to dissipate. I found a handful of people in my cohort who were almost always willing to take time outside of class to help with assignments or just explaining general concepts in a different way. Over time, I think I found a good balance between digging in and doing my own work and learning when to throw in the towel and reach out to those who know better than I do.
 
 ## Future Improvements
 

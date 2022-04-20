@@ -17,6 +17,12 @@
 
 ## Daily Progress
 
+**April 20th - about 99% done**
+
+- I spent today finishing up my testing. I only have one test left - the parameterized test. I'm putting myself at 99% at this point because (aside from the last test) I have satisfied all of the requirements according to the capstone documentation. However, I do have some refactoring I'd like to do and some HTML I'd like to fix, but it is not necessary to fulfill the requirements. 
+
+- EDIT: I also forgot to include wireframes -- I intended to redo them from my initial plans, as my front end has changed drastically since then. I was planning on just drawing them by hand and uploading a photo to this document.
+
 **April 19th - about 96% done**
 
 - I've added a 4th model, and done at least half of the tests I need to meet the requirements. Tonight and tomorrow I plan on finishing the testing, and everything else I'll need for the presentation.

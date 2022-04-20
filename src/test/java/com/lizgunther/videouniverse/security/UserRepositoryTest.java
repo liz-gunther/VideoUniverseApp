@@ -18,4 +18,10 @@ class UserRepositoryTest {
         User user1 = userRepository.findByEmail("kdahlin@gmail.com");
         Assertions.assertThat(user1.getEmail()).isEqualTo("kdahlin@gmail.com");
     }
+
+    @Test
+    void findUserById_should_return_valid_user_when_id_is_given() {
+        User user1 = userRepository.findUserById(1L);
+        Assertions.assertThat(user1.getId()).isEqualTo(1L);
+    }
 }

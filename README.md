@@ -111,6 +111,10 @@ of designing pages so that you can choose which wishlist you would like to view.
 
 ## Technical Architecture
 
+![technical architecture of project][techstack]
+
+[techstack]: https://github.com/liz-gunther/VideoUniverseApp/blob/master/resources/techstack.png
+
 ## Technical Challenges
 
 ## Lessons Learned

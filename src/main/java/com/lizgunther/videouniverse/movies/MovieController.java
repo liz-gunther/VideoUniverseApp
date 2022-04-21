@@ -3,7 +3,8 @@ package com.lizgunther.videouniverse.movies;
 import com.lizgunther.videouniverse.security.User;
 import com.lizgunther.videouniverse.security.UserService;
 import com.lizgunther.videouniverse.wishlists.FormObject;
-import com.lizgunther.videouniverse.wishlists.WishlistService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,23 +18,21 @@ import java.security.Principal;
 @Controller
 public class MovieController {
 
-    private MovieService movieService;
-    private UserService userService;
-    private WishlistService wishlistService;
-    private RequestService requestService;
+    private final MovieService movieService;
+    private final UserService userService;
+    private final RequestService requestService;
 
+    private final Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
-    public MovieController(MovieService movieService, UserService userService, WishlistService wishlistService, RequestService requestService) {
+    public MovieController(MovieService movieService, UserService userService, RequestService requestService) {
         this.movieService = movieService;
         this.userService = userService;
-        this.wishlistService = wishlistService;
         this.requestService = requestService;
     }
 
     @GetMapping("/explore")
     public String showExplorePage() {
-
         return "explore";
     }
     //populate the movie template page with a random movie selected from the database by genre
@@ -42,6 +41,7 @@ public class MovieController {
         Movie movie = movieService.getMovieByGenre(genre);
         User currentUser = userService.findByEmail(principal.getName());
         FormObject formObject = new FormObject();
+        logger.info("---INFO LOG TEST---");
         model.addAttribute("formObject", formObject);
         model.addAttribute("wishlists", currentUser.getWishlists());
         model.addAttribute("movie", movie);
@@ -114,5 +114,6 @@ public class MovieController {
         userService.saveUser(currentUser);
         return "redirect:/request";
     }
+
 }
 

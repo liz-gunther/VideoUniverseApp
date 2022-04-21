@@ -25,6 +25,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         this.passwordEncoder = passwordEncoder;
     }
 
+    //The following methods were taken from a lab we did in class for user registration.
 
     @Override
     public User save(UserRegistrationDto registration) {

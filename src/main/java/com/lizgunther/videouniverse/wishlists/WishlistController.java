@@ -19,6 +19,7 @@ public class WishlistController {
     private MovieService movieService;
     private UserService userService;
 
+    private final String URL = "/wishlists";
 
     @Autowired
     private WishlistController(WishlistService wishlistService, MovieService movieService, UserService userService) {
@@ -28,7 +29,7 @@ public class WishlistController {
     }
 
     //This works
-    @GetMapping("/wishlists")
+    @GetMapping(value = URL)
     public String showWishlists(Principal principal, Model model) {
         User currentUser = userService.findByEmail(principal.getName());
         model.addAttribute("wishlists", wishlistService.getWishlistsByUserId(currentUser.getId()));

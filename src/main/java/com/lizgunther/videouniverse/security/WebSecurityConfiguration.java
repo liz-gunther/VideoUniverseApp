@@ -67,18 +67,6 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter{
         auth.authenticationProvider(authenticationProvider());
     }
 
-
-//    @Override
-//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-//
-//        PasswordEncoder passwordEncoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
-//
-//        auth.inMemoryAuthentication()
-//                .withUser("user").password(passwordEncoder.encode("user")).roles("USER").and()
-//                .withUser("admin").password(passwordEncoder.encode("admin")).roles("USER","ADMIN").and()
-//                .withUser("superadmin").password(passwordEncoder.encode("superadmin")).roles("USER","ADMIN","SUPERADMIN");
-//    }
-
     @Override
     public void configure(WebSecurity web) throws Exception {
         web.ignoring().antMatchers("/static/**");

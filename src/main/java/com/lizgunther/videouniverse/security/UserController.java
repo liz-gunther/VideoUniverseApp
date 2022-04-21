@@ -1,5 +1,6 @@
 package com.lizgunther.videouniverse.security;
 
+import com.lizgunther.videouniverse.wishlists.WishlistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,11 +18,13 @@ public class UserController {
 
     private UserService userService;
     private UserDetailsService userDetailsService;
+    private WishlistService wishlistService;
 
     @Autowired
-    public UserController(UserService userService, UserDetailsService userDetailsService) {
+    public UserController(UserService userService, UserDetailsService userDetailsService, WishlistService wishlistService) {
         this.userService = userService;
         this.userDetailsService = userDetailsService;
+        this.wishlistService = wishlistService;
     }
 
     //show the list of users

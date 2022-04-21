@@ -258,6 +258,15 @@ form + div {
     color: white;
 }
 
+.btn-custom{
+    padding: 6px 12px;
+    border: 0 none;
+    font-weight: 400;
+    letter-spacing: 1px;
+
+    background-color: hsl( var(--clr-light) )
+}
+
 input.btn {
     margin-top: 1rem;
     background-color: hsl( var(--clr-dark) );

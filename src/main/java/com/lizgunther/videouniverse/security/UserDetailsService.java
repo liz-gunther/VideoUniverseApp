@@ -5,5 +5,4 @@ public interface UserDetailsService extends org.springframework.security.core.us
 
     User save(UserRegistrationDto userDto);
 
-
 }

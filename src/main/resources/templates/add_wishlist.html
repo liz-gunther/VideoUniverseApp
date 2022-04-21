@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +28,8 @@
             <li class="active"><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="/wishlists">My
                 Wishlists</a></li>
             <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="/profile">My Profile</a></li>
-            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="/login">Login/Signup</a></li>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" sec:authorize="isAnonymous()" href="/login">Login/Signup</a></li>
+            <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" sec:authorize="isAuthenticated()" href="/profile">Logout</a></li>
         </ul>
     </nav>
 </header>

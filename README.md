@@ -17,9 +17,17 @@
 
 ## Daily Progress
 
+**April 21st - 99.999% done**
+
+- Today I finished up all the tests for my project, and finally got an appropriate parameterized test working. I also included a custom log in my wishlist controller, and am now finishing up drawing out my wireframes. After those are completed, I will upload them to my project.
+
+- Since I am nearly completed with my own capstone, I spent a lot of time today helping my fellow learners achieve "MVP" for their own projects. It is helpful for me because it allows me to deepen my own understanding of some concepts that we've implemented in our projects (namely Thymeleaf).
+
+- Even after all the requirements are satisfied, I still would only call the project 99.999% done because there are still a handful of front-end things I would like to tidy up. There is ALWAYS room for improvement!
+
 **April 20th - about 99% done**
 
-- I spent today finishing up my testing. I only have one test left - the parameterized test. I'm putting myself at 99% at this point because (aside from the last test) I have satisfied all of the requirements according to the capstone documentation. However, I do have some refactoring I'd like to do and some HTML I'd like to fix, but it is not necessary to fulfill the requirements. 
+- I spent today finishing up my testing. I only have one test left - the parameterized test. I'm putting myself at 99% at this point because (aside from the last test) I have satisfied all the requirements according to the capstone documentation. However, I do have some refactoring I'd like to do and some HTML I'd like to fix, but it is not necessary to fulfill the requirements. 
 
 - EDIT: I also forgot to include wireframes -- I intended to redo them from my initial plans, as my front end has changed drastically since then. I was planning on just drawing them by hand and uploading a photo to this document.
 
@@ -31,7 +39,7 @@
 
 - I've started implementing tests. I've gotten one done successfully, and I've started on the remaining tests. I also have plans to implement a user submission form, so that the current user will be able to submit a request to the video store to carry a certain movie. I am planning on fleshing that out after I finish the tests for my existing service classes & custom queries.
 
-- I also would like to finish organizing all of the writeups I'll need for my submission, including a summary of the app and plans for future improvements. 
+- I also would like to finish organizing all write-ups I'll need for my submission, including a summary of the app and plans for future improvements. 
 
 
 **April 15th - about 90% done**
@@ -51,16 +59,13 @@ the right testing done.
 
 
 - Got all my CRUD working, except for the add movie to a particular user's wishlist. I was able to update and
-delete the current user, as well as create multiple wishlists for each user. I am having an issue with
-deleting wishlists, as they are connected to multiple tables. I still haven't gotten a good start on my tests
-yet, but I plan to start in earnest tomorrow.
+delete the current user, as well as create multiple wishlists for each user. I am having an issue with deleting wishlists, as they are connected to multiple tables. I still haven't gotten a good start on my tests yet, but I plan to start in earnest tomorrow.
 
 
 **April 13th - about 70% done**
 
 
-- I finally got the login/registration working. Now I'm retrofitting my CRUD operations and mapping so that it
-accurately reflects the details of the current user. Tonight I plan on fixing the delete and add functions of
+- I finally got the login/registration working. Now I'm retrofitting my CRUD operations and mapping so that it accurately reflects the details of the current user. Tonight I plan on fixing the delete and add functions of
 my wishlists. The idea is that each user can add/edit/delete wishlists -- I had the CRUD working before I added
 security but now I'm struggling to understand how to assign the ID of each wishlist to the user that created
 it.

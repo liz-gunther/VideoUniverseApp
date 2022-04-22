@@ -99,7 +99,7 @@ of designing pages so that you can choose which wishlist you would like to view.
 
 [Case Study Rubric](https://docs.google.com/document/d/1jag0QzOk9YapcZaj85W7k22Pi13wa3O7NXnsWkP-QQs/edit?usp=sharing)
 
-Contact Liz Gunther<liz.gunther@gmail.com> to access this document.
+Contact <liz.gunther@gmail.com> to access this document.
 
 ## User Stories
 

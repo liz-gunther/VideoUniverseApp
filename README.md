@@ -7,6 +7,7 @@
 ### I've also included a "request a movie" functionality that allows the user to submit a movie that they would like the store to carry. 
 
 - [Daily Progress](#Daily-Progress)
+- [Case Study Rubric](#Case-Study-Rubric)
 - [User Stories](#User-Stories)
 - [Technical Architecture](#Technical-Architecture)
 - [Technical Challenges](#Technical-Challenges)
@@ -94,6 +95,10 @@ of designing pages so that you can choose which wishlist you would like to view.
 
 - I am hoping to get sessions working so that I can display the wishlists for the current user only.
 
+## Case Study Rubric
+
+https://docs.google.com/document/d/1jag0QzOk9YapcZaj85W7k22Pi13wa3O7NXnsWkP-QQs/edit?usp=sharing
+
 ## User Stories
 
 1. As a user, I want to be able to create multiple wishlists so that I can easily organize the collections of movies
@@ -142,10 +147,10 @@ This is the very first app I've ever built. I am brand new to every technology c
    - I had big plans for my front end, and found a tutorial that I thought would be perfect for helping me build the web pages of my dreams. It turned out to be far more advanced than I was prepared for, and ended up building a lot of custom CSS classes that (I thought) would make designing multiple pages a lot smoother. However, once I got around to learning about and using Bootstrap elements, I found that a lot of my custom classes clashed with the ones needed for Bootstrap.
    - To fix this, I ended up renaming some of my custom classes. It took a bit of refactoring, but I made short work of that with good ol' search and find.
 2. Thymeleaf
-    - I don't think I'm alone in my struggles with Thymeleaf. There wasn't a ton of course material that covered it, so I was left to my own devices to figure out a lot of the annotations and how they worked. 
-    - I overcame this particular challenge by trial and error -- doing things wrong (a lot of times) and figuring out how each element interacted with others.
+    - I don't think I'm alone in my struggles with Thymeleaf. There wasn't a ton of course material that covered it, so I was left to my own devices to figure out a lot of the annotations and how they worked. My biggest challenge was for this was creating a drop-down menu on my movie template page that is populated with a list of the wishlists created by the current user. 
+    - I overcame this particular challenge by trial and error -- doing things wrong (a lot of times) and figuring out how each element interacted with others. My solution for the drop-down problem was creating my FormObject class, which saves the wishlist selected as the one to which the movie is added.
 3. Complex Entity Models
-   - One final (and memorable) challenge I encountered was puzzling out my entity models. It was difficult to know how to connect the data in a way that was efficient and easily accessible. 
+   - One final (and memorable) challenge I encountered was puzzling out my entity models. It was difficult to know how to connect the data in a way that was efficient and easily accessible. Specifically, I had a hard time wrapping my head around what the relationship between my Movie class and my Wishlist class needed to be in order to 
    - My solution to this was to seek help -- and LOTS of it. While reading Baeldung and StackOverflow solutions certainly helped, I found that I learned most effectively when I was able to interact with my fellow learners to hash things out. Which segues nicely to my next point...
    
 ## Lessons Learned

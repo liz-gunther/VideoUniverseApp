@@ -63,9 +63,9 @@
             <td th:text="${wishlist.wishlistName}"></td>
             <td><a th:href="@{/wishlist/{id}(id = ${wishlist.id})}" class="btn btn-custom"><i class="bi bi-pencil"></i></a>
             </td>
-            <td><h2><a th:href="@{/delete_wishlist/{id}(id = ${wishlist.id})}"><i
-                    class="bi bi-trash text-accent"></i></a></h2>
-            </td>
+<!--            <td><h2><a th:href="@{/delete_wishlist/{id}(id = ${wishlist.id})}"><i-->
+<!--                    class="bi bi-trash text-accent"></i></a></h2>-->
+<!--            </td>-->
         </tr>
         </tbody>
         <form class="text-white ff-sans-cond" action="#" th:action="@{/add_wishlist}" th:object="${wishlist}"

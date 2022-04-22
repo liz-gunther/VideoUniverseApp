@@ -63,7 +63,7 @@ public class WishlistController {
 
     @GetMapping("/delete_wishlist/{id}")
     public String deleteWishlist(@PathVariable(value = "id") long id) {
-        wishlistService.deleteWishlistById(id);
+        this.wishlistService.deleteWishlistById(id);
         return "redirect:/list_of_wishlists";
     }
 
@@ -99,6 +99,7 @@ public class WishlistController {
         return "wishlist";
 
     }
+
     //works
     
     @RequestMapping(value = "/populateDropDownList", method = RequestMethod.GET)

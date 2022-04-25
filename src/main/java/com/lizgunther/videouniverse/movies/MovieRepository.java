@@ -9,7 +9,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface MovieRepository extends JpaRepository<Movie, Long> {
 
-
     //Here are the custom queries I wrote to pull a single random movie from my database: filtered by genre...
     @Query(nativeQuery = true, value = "SELECT * FROM moviedata m WHERE m.genre = :genre ORDER BY RAND() LIMIT 1;")
     Movie getMovieByGenre(@Param("genre") String genre);

@@ -15,6 +15,7 @@
 - [Future Improvements](#Future-Improvements)
 - [Wireframe Diagram](#Wireframe-Diagram)
 - [Schema Diagram](#Schema-Diagram)
+- [Business Applications](#Business-Applications)
 
 ## Daily Progress
 
@@ -178,3 +179,7 @@ I'd also love to sharpen up the front end -- while I feel I did an adequate job 
 ![database schema][schema]
 
 [schema]: https://github.com/liz-gunther/VideoUniverseApp/blob/master/resources/dbschema.png
+
+## Business Applications
+
+As someone who has spent most of my adult life un- or under-insured, at some point I have had a list of things for which I would like to get medical attention once I had better insurance. While it feels bleak to speak in terms of healthcare in this way, it seems to be the reality for many Americans. I think having some sort of portal for care that you would like to receive but is not urgent could be helpful - especially if they were in the form of requests that would tell you whether you have coverage or not.

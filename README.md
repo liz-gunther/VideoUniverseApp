@@ -197,11 +197,14 @@ As someone who has spent most of my adult life un- or under-insured, at some poi
 ## Screenshots
 
 ![screenshot 1][screenshot1]
+
 [screenshot1]: https://github.com/liz-gunther/VideoUniverseApp/blob/master/resources/screenshot1.png
 
 ![screenshot 2][screenshot2]
+
 [screenshot2]: https://github.com/liz-gunther/VideoUniverseApp/blob/master/resources/screenshot2.png
 
 ![screenshot 3][screenshot3]
+
 [screenshot3]: https://github.com/liz-gunther/VideoUniverseApp/blob/master/resources/screenshot3.png
 

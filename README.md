@@ -21,6 +21,10 @@
 
 ## Daily Progress
 
+**April 24th - ready to turn in**
+
+- While I still have things I would like to fix in the future, I have decided to leave well enough alone for the capstone project. I know there are classmates of mine who still need to finish their project, so I will spend the rest of my class time helping them.
+
 **April 21st - 99.999% done**
 
 - Today I finished up all the tests for my project, and finally got an appropriate parameterized test working. I also included a custom log in my wishlist controller, and am now finishing up drawing out my wireframes. After those are completed, I will upload them to my project.

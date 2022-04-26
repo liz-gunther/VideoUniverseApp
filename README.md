@@ -13,9 +13,11 @@
 - [Technical Challenges](#Technical-Challenges)
 - [Lessons Learned](#Lessons-Learned)
 - [Future Improvements](#Future-Improvements)
+- [Business Applications](#Business-Applications)
 - [Wireframe Diagram](#Wireframe-Diagram)
 - [Schema Diagram](#Schema-Diagram)
-- [Business Applications](#Business-Applications)
+- [Screenshots](#Screenshots)
+
 
 ## Daily Progress
 
@@ -172,7 +174,15 @@ One of the biggest things that I wish I could've done is added a search function
 
 I'd also love to sharpen up the front end -- while I feel I did an adequate job of capturing the views I had imagined, there are some animations that I couldn't quite puzzle out, and there are some UI elements that need to be changed. Again, this is a project I very much look forward to revisiting. I'm very proud of the work I accomplished, but I already have big ideas for how I'd like to improve it.
 
+## Business Applications
+
+As someone who has spent most of my adult life un- or under-insured, at some point I have had a list of things for which I would like to get medical attention once I had better insurance. While it feels bleak to speak in terms of healthcare in this way, it seems to be the reality for many Americans. I think having some sort of portal for care that you would like to receive but is not urgent could be helpful - especially if they were in the form of requests that would tell you whether you have coverage or not.
+
 ## Wireframe Diagram
+
+![wireframe diagram][wireframes]
+
+[wireframes]: https://github.com/liz-gunther/VideoUniverseApp/blob/master/resources/capstone-wireframes.jpg
 
 ## Schema Diagram
 
@@ -180,6 +190,14 @@ I'd also love to sharpen up the front end -- while I feel I did an adequate job 
 
 [schema]: https://github.com/liz-gunther/VideoUniverseApp/blob/master/resources/dbschema.png
 
-## Business Applications
+## Screenshots
 
-As someone who has spent most of my adult life un- or under-insured, at some point I have had a list of things for which I would like to get medical attention once I had better insurance. While it feels bleak to speak in terms of healthcare in this way, it seems to be the reality for many Americans. I think having some sort of portal for care that you would like to receive but is not urgent could be helpful - especially if they were in the form of requests that would tell you whether you have coverage or not.
+![screenshot 1][screenshot1]
+[screenshot1]: https://github.com/liz-gunther/VideoUniverseApp/blob/master/resources/screenshot1.png
+
+![screenshot 2][screenshot2]
+[screenshot2]: https://github.com/liz-gunther/VideoUniverseApp/blob/master/resources/screenshot2.png
+
+![screenshot 3][screenshot3]
+[screenshot3]: https://github.com/liz-gunther/VideoUniverseApp/blob/master/resources/screenshot3.png
+
